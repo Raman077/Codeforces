@@ -1,0 +1,51 @@
+#include<iostream>
+#include<cmath>
+#include<cstring>
+#include<iomanip>
+#include<fstream>
+#include<set>
+#include<vector>
+#include<map>
+#include<algorithm>
+#include<utility>
+#define MX 100000
+#define fs first
+#define sec second
+#define TC int T;cin>>T;while(T--)
+#define loop(i,a,c) for(int i=0;i<a;i++)
+#define loop1(i,a,c) for(int i=1;i<=a;i++)
+#define pb(a) push_back(a)
+#define all(a) (a).begin(), (a).end()
+#define mp(x, y) make_pair((x), (y))
+#define ll long long int
+using namespace std;
+int main()
+{
+	int a[10000];int x=0;
+	int count=0,flag=0,m=0;
+	 freopen("input.txt", "r", stdin);  
+   freopen("output.txt", "w", stdout);  
+	int t;cin>>t;
+	string arr; cin>>arr;
+//	vector<int>v;
+	
+	for(int i=0;i<t;i++)
+	{
+		cin>>arr[i];
+		if(arr[i]=='1'){
+			a[x]=i; x++;
+		}
+		
+	}
+	int s=a[1]-a[0];
+	for(int i=2;i<x;i++){
+		if(a[i]-a[i-1]!=s){
+			cout<<"NO"; flag=-1;break;
+		}
+	
+	}
+	if(flag==0){
+	puts("YES");
+	}
+
+}
