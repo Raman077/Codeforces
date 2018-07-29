@@ -1,3 +1,3 @@
 # Codeforces
 
-It contains my codes for codeforces problems.
+It contains my codes for various codeforces problems.
